@@ -1,16 +1,12 @@
-//5. Create a Note.jsx component to show a <div> element with a
-//<h1> for a title and a <p> for the content.
 import React from "react";
-function Note() {
-    return (
-        <div className="note"> 
-            <h1>
-                This is heading.
-            </h1>
-            <p>
-                This is paragraph.
-            </p>
+
+function Note(props) {
+    return ( 
+        <div className = "note" >
+        <h1>{props.title} </h1> 
+        <p> {props.content}</p> 
         </div>
     );
 }
+
 export default Note;
